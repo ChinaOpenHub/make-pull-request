@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v0.3.3
+      - uses: actions/checkout@v1
       - name: Run Codeowners merge check
-        uses: casassg/auto-merge-bot@master
+        uses: OSS-Docs-Tools/code-owner-self-merge@1.6.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
